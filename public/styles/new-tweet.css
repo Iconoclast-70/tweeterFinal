@@ -1,0 +1,11 @@
+.new-tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  font-family: 'Source Sans Pro';
+  background-color: beige;
+  height: 200px;
+  width: 100%;
+  padding: 1em;
+}

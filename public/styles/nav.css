@@ -1,0 +1,110 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Bungee';
+  background-color: #4056A1;
+  height: 120px;
+  width: 100%;
+  padding: 1em;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+}
+
+article {
+  width: 100%;
+  border: black 5px solid;
+  box-shadow: 0px 3px 3px;
+}
+
+article:hover {
+  box-shadow: 7px 7px 5px rgb(149, 149, 162);
+}
+
+i {
+  color: darkblue;
+}
+
+i:hover {
+  color: yellow;
+}
+
+.nav-container {
+  display: flex;
+  font-family: 'Bungee';
+  align-self:flex-start;
+  background-color: #4056A1;
+  color: white;
+  height: 30px;
+} 
+
+.tweet-container {
+  font-family: 'Source Sans Pro';
+}
+
+.counter {
+  font-family: 'Bungee';
+  color: black;
+}
+
+.tweet-icons {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.tweet-article {
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  height: 100%x;
+  border: black 5px solid;
+}
+
+.text-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro';
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.tweet-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.border {
+  width: 100%;
+  color: black;
+}
+
+.textAreaFormat {
+  background-color: inherit;
+  height: 40px;
+  color: black;
+  border: 0;
+  border-bottom: black 5px solid;
+}
+
+.tweet-form {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
