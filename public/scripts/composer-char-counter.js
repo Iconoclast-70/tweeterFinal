@@ -1,8 +1,7 @@
 $(document).ready(function() {
   console.log("ready");
   $( "#tweet-text" ).keyup(function() {
-    //$("#error-message").html(""); //Clear the error message div
-    //$('#current-count').html("140"); 
+    $("#error-message").html(""); //Clear the error message div
     const chars = $(this).val(); //Capture the characters from the text area
     //Update the counter, if the character count is over 140, change the colour to red and count backwards
     if (chars.length === 141) {
