@@ -75,15 +75,22 @@ $(document).ready(function () {
 
   $("#tweet-submit").click(function(event) {
     $("#error-message").html(""); //Clear the error message div
+    
   });
 
   //Submit event for the form
   $("#tweet-submit").submit(function(event) {
+ 
     $("#error-message").html(""); //Clear the error message div
+    $('#current-count').html("140"); 
+
     event.preventDefault();
     const queryString = $(this).serialize();
     const formValues = $(this).serializeArray();
     const textAreaString = formValues[0]["value"];
+
+    $("#tweet-text").html("");
+
     //Validate the tweet submitted - if it is under 140 characters and is not falsy, add the tweet
     if (textAreaString && textAreaString.length < 140) {
       $.ajax("/tweets/",{
@@ -95,8 +102,8 @@ $(document).ready(function () {
       })
       .catch(err => {
         console.log(err);
-      });
-
+      }); 
+      
     } else {
 
       //If the text is an invalid length or is falsy, display an error message within the "error-message" div element for the page
@@ -108,7 +115,6 @@ $(document).ready(function () {
             <i class="fas fa-exclamation-triangle" color="red"></i>
           </span>`
         );
-        //$("#error-message").append($errMessageTooLong);
         $("#error-message").html($errMessageTooLong);
       }
     }
