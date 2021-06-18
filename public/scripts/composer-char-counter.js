@@ -1,40 +1,14 @@
-
-
 $(document).ready(function() {
   console.log("ready");
-
-  /* EVENT HANDLERS ***********************************************************************
-  //On click event
-  $('#tweet-text').on('input',function(){
-
-  });
-
-  //KeyPress Event
-  $( "#tweet-text" ).keypress(function() {
-    console.log( "Handler for .keypress() called." );
-  });
-
-  //KeyDown Event
-  $( "#tweet-text" ).keydown(function() {
-    console.log( "Handler for .keydown() called." );
-  });
-
-  //OnChange
-  $( ".tweet-text" ).change(function() {
-    console.log( "Handler for .change() called." );
-  });
-
- **********************************************************************************************/
-
-  //KeyUP Event
   $( "#tweet-text" ).keyup(function() {
-    $("#error-message").html("");
+    $("#error-message").html(""); //Clear the error message div
     const chars = $(this).val(); //Capture the characters from the text area
-    //Update the counter
+    //Update the counter, if the character count is over 140, change the colour to red and count backwards
     if (chars.length === 141) {
       $('#current-count').css('color','red');
       $('#current-count').html('-1');  
     }
+    //Capture each character entered and increment the letter count for the tweet
     if (chars.length < 141) {
       $('#current-count').html(String(chars.length));    
       $('#current-count').css('color','black');

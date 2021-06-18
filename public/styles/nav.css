@@ -1,4 +1,5 @@
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -16,8 +17,8 @@ nav {
 
 article {
   width: 100%;
-  border: black 5px solid;
-  box-shadow: 0px 3px 3px;
+  border: black 3px solid;
+  box-shadow: 0px 10px 10px;
 }
 
 article:hover {
@@ -41,7 +42,7 @@ i:hover {
   height: 30px;
 } 
 
-.tweet-container {
+.nav-text {
   font-family: 'Source Sans Pro';
 }
 

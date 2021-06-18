@@ -1,13 +1,14 @@
 header {
   display: flex;
-  margin-top: 100px;
-  height: 400px;
+  height: 100%;
   width: 100%;
+  margin-top: 100px;
+  margin-left: 100px;
   color: white;
   justify-content: center;
   align-items: center;
   background-color:cadetblue;
   flex-direction: column;
   background-color: #000d09;
-  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png"); 
 }
